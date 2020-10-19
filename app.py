@@ -74,6 +74,8 @@ class Show(db.Model):
   venue = db.relationship('Venue', backref= db.backref('Artist'))
   artist = db.relationship('Artist', backref= db.backref('Venue'))
 
+# db.create_all()
+
 # TODO Implement Show and Artist models, and complete all model relationships and properties, as a database migration.
 
 #----------------------------------------------------------------------------#
